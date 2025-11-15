@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHOP.CO — Cart</title>
+
+  <!-- If you have Satoshi available via URL, replace below or add @font-face in CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <!-- Top Notification Bar -->
+    <div class="top-notice" role="region" aria-label="promo notice">
+      <div class="top-notice__inner page-center" style="width:1440px;">
+        <button class="top-notice__close" aria-label="close notice">
+          <img src="assets/cross.png" alt="" width="20" height="20">
+        </button>
+        <p class="top-notice__text">Sign up and get 20% off to your first order. <a href="#">Sign up now.</a></p>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav page-center" aria-label="Main navigation">
+      <div class="nav-inner" style="width:1240px;">
+        <div class="nav-left">
+          <div class="logo" aria-hidden="true">SHOP.CO</div>
+          <ul class="nav-links" role="menubar">
+            <li class="nav-links__item">Shop <img src="assets/downarrow.png" alt="" class="icon-arrow"></li>
+            <li class="nav-links__item">On Sale</li>
+            <li class="nav-links__item">New Trends</li>
+            <li class="nav-links__item">Brands</li>
+          </ul>
+        </div>
+
+        <div class="nav-center">
+          <label class="search" for="search-input" aria-hidden="false">
+            <img src="assets/search.png" alt="" class="search__icon">
+            <input id="search-input" class="search__input" type="text" placeholder="Search for products..." />
+          </label>
+        </div>
+
+        <div class="nav-right">
+          <div class="icon-box">
+            <img src="assets/cart.png" alt="cart" class="icon">
+            <img src="assets/cartclose.png" alt="close cart" class="icon icon--muted">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-center" style="width:1240px;">
+    <!-- Breadcrumb + Heading -->
+    <section class="page-header">
+      <div class="breadcrumb">Home &gt; Cart</div>
+      <h1 class="page-title">YOUR CART</h1>
+    </section>
+
+    <!-- Cart Columns -->
+    <section class="cart-area" aria-label="Cart">
+      <div class="cart-left" style="width:715px;">
+        <!-- Product 1 -->
+        <article class="cart-item" data-price="145">
+          <img class="cart-item__img" src="assets/whiteteeshirt.png" alt="Gradient Graphic T-shirt" width="124" height="124">
+          <div class="cart-item__info">
+            <div class="cart-item__head">
+              <h2 class="cart-item__title">Gradient Graphic T-shirt</h2>
+              <button class="cart-item__delete" aria-label="Remove item">
+                <img src="assets/delete.png" alt="">
+              </button>
+            </div>
+            <div class="cart-item__meta">
+              <div class="meta-left">
+                <div class="meta-line">Size: <span>Large</span></div>
+                <div class="meta-line">Color: <span>White</span></div>
+              </div>
+              <div class="meta-right">
+                <div class="price" data-price-display>$145</div>
+                <div class="quantity">
+                  <button class="qty-btn qty-decrease" aria-label="decrease"><img src="assets/minus.png" alt="-"></button>
+                  <div class="qty-count">1</div>
+                  <button class="qty-btn qty-increase" aria-label="increase"><img src="assets/plus.png" alt="+"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="cart-item" data-price="180">
+          <img class="cart-item__img" src="assets/redshirt.png" alt="Checkered Shirt" width="124" height="124">
+          <div class="cart-item__info">
+            <div class="cart-item__head">
+              <h2 class="cart-item__title">Checkered Shirt</h2>
+              <button class="cart-item__delete" aria-label="Remove item">
+                <img src="assets/delete.png" alt="">
+              </button>
+            </div>
+            <div class="cart-item__meta">
+              <div class="meta-left">
+                <div class="meta-line">Size: <span>Medium</span></div>
+                <div class="meta-line">Color: <span>Red</span></div>
+              </div>
+              <div class="meta-right">
+                <div class="price" data-price-display>$180</div>
+                <div class="quantity">
+                  <button class="qty-btn qty-decrease" aria-label="decrease"><img src="assets/minus.png" alt="-"></button>
+                  <div class="qty-count">1</div>
+                  <button class="qty-btn qty-increase" aria-label="increase"><img src="assets/plus.png" alt="+"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="cart-item" data-price="240">
+          <img class="cart-item__img" src="assets/bluejeans.png" alt="Skinny Fit Jeans" width="124" height="124">
+          <div class="cart-item__info">
+            <div class="cart-item__head">
+              <h2 class="cart-item__title">Skinny Fit Jeans</h2>
+              <button class="cart-item__delete" aria-label="Remove item">
+                <img src="assets/delete.png" alt="">
+              </button>
+            </div>
+            <div class="cart-item__meta">
+              <div class="meta-left">
+                <div class="meta-line">Size: <span>Large</span></div>
+                <div class="meta-line">Color: <span>Blue</span></div>
+              </div>
+              <div class="meta-right">
+                <div class="price" data-price-display>$240</div>
+                <div class="quantity">
+                  <button class="qty-btn qty-decrease" aria-label="decrease"><img src="assets/minus.png" alt="-"></button>
+                  <div class="qty-count">1</div>
+                  <button class="qty-btn qty-increase" aria-label="increase"><img src="assets/plus.png" alt="+"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Order Summary (Right Column) -->
+      <aside class="cart-right" style="width:505px;" aria-label="Order summary">
+        <div class="order-summary">
+          <h3 class="order-summary__title">Order Summary</h3>
+
+          <div class="summary-row">
+            <div>Subtotal</div>
+            <div id="subtotal">$565</div>
+          </div>
+
+          <div class="summary-row">
+            <div>Discount (-20%)</div>
+            <div id="discount" class="text-red">- $113</div>
+          </div>
+
+          <div class="summary-row">
+            <div>Delivery Fee</div>
+            <div id="delivery">$15</div>
+          </div>
+
+          <hr class="summary-sep">
+
+          <div class="summary-row summary-total">
+            <div>Total</div>
+            <div id="total" class="total-amount">$467</div>
+          </div>
+
+          <div class="promo-row">
+            <div class="promo-field">
+              <img src="assets/discount.png" alt="" class="promo-icon">
+              <input id="promo-input" type="text" placeholder="Add promo code" />
+            </div>
+            <button id="apply-promo" class="btn btn-apply">Apply</button>
+          </div>
+
+          <button id="checkout-btn" class="btn btn-checkout">
+            Go to Checkout
+            <img src="assets/rightarrow.png" alt="" class="btn-arrow">
+          </button>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="newsletter" aria-label="newsletter">
+    <div class="newsletter__inner" style="width:1240px;">
+      <div class="newsletter__box">
+        <div class="newsletter__left">
+          <h4>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+        </div>
+        <div class="newsletter__right">
+          <div class="newsletter__input">
+            <img src="assets/email.png" alt="">
+            <input type="email" placeholder="Enter your email address">
+          </div>
+          <button class="btn btn-subscribe">Subscribe to Newsletter</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="site-footer" aria-label="footer">
+  <div class="footer-inner">
+    <!-- Left Section -->
+    <div class="footer__left">
+      <div class="logo footer-logo">SHOP.CO</div>
+      <p class="footer-desc">
+        We have clothes that suit your style and which you're proud to wear. From women to men.
+      </p>
+
+      <div class="socials">
+        <img src="assets/twitter.png" alt="twitter">
+        <img src="assets/facebook.png" alt="facebook">
+        <img src="assets/insta.png" alt="instagram">
+        <img src="assets/github.png" alt="github">
+      </div>
+    </div>
+
+    <!-- Footer Columns -->
+    <div class="footer__cols">
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li>About</li>
+          <li>Features</li>
+          <li>Works</li>
+          <li>Career</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Help</h5>
+        <ul>
+          <li>Customer Support</li>
+          <li>Delivery Details</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>FAQ</h5>
+        <ul>
+          <li>Account</li>
+          <li>Order Tracking</li>
+          <li>Returns</li>
+          <li>Payments</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li>Free eBooks</li>
+          <li>Development Tutorial</li>
+          <li>How to - Blog</li>
+          <li>Youtube Playlist</li>
+        </ul>
+      </div>
+    </div>
+  </div> <!--  footer-inner ends here -->
+
+  <!-- Footer Bottom (separate section) -->
+  <div class="footer-bottom">
+    <p class="copyright">shop.co © 2000–2025, All Rights Reserved.</p>
+    <div class="payments">
+      <img src="assets/visaBadge.png" alt="visa">
+      <img src="assets/mastercardpayment.png" alt="mastercard">
+      <img src="assets/paypalBadge.png" alt="paypal">
+      <img src="assets/applepay.png" alt="applepay">
+      <img src="assets/Gpay.png" alt="gpay">
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
